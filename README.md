@@ -12,7 +12,7 @@
 
 2. [输入密码时在命令行隐藏输入](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/002_hide_pwd.sh)
 
-
+3. [计算一组命令执行的时间](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/003_cost.sh)
 
 
 
