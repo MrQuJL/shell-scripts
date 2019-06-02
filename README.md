@@ -8,7 +8,9 @@
 
 ### :books:脚本列表
 
-1. [使用 tr 命令实现加密和解密]()
+1. [使用 tr 命令实现加密和解密]([https://github.com/MrQuJL/shell-scripts/blob/master/scripts/001_encryption.sh](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/001_encryption.sh)
+
+2. 
 
 
 
