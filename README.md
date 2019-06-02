@@ -6,11 +6,11 @@
 
 
 
-### :books: 脚本列表
+### :books: Tips
 
 1. [使用 tr 实现加密解密](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/001_encryption.sh)
 
-2. 
+2. [输入密码时在命令行隐藏输入](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/002_hide_pwd.sh)
 
 
 
