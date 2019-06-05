@@ -15,7 +15,7 @@
 5. 使用 cat 将标准输入数据与文件数据组合在一起
    
    ```powershell
-   echo 'Text through stdin' | cat - file.txt
+   $ echo 'Text through stdin' | cat - file.txt
    ```
    
    上面的 `-` 被作为标准输入文本的文件名
@@ -23,10 +23,58 @@
 6. 使用 find 查找文件并忽略文件名的大小写
    
    ```powershell
-   find . -iname 'file*'
+   $ find . -iname 'file*' -print
 
    ./01_easy/file.sh
    ./02_fun/file.py
    ./02_fun/FILE.txt
    ./02_fun/file.txt
    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
