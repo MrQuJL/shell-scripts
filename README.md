@@ -13,25 +13,34 @@
 4. [在不按回车键的情况下读入n个字符](https://github.com/MrQuJL/shell-scripts/blob/master/scripts/004_read.sh)菜单
 
 5. 使用 cat 将标准输入数据与文件数据组合在一起
-   
+
    ```powershell
    $ echo 'Text through stdin' | cat - file.txt
    ```
-   
+
    上面的 `-` 被作为标准输入文本的文件名
 
 6. 使用 find 查找文件并忽略文件名的大小写
-   
+
    ```powershell
    $ find . -iname 'file*' -print
-
+   
    ./01_easy/file.sh
    ./02_fun/file.py
    ./02_fun/FILE.txt
    ./02_fun/file.txt
    ```
 
+7. 创建特定大小的文件：
 
+   ```shell
+   dd if=/dev/zero of=junk.data bs=1M count=1
+   ```
+
+   * if 表示输入文件（input file）
+   * of 表示输出文件（output file）
+   * bs 指定了以字节为单位的块大小（block size）
+   * count 表示需要被复制的块数
 
 
 
