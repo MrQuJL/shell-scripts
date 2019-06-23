@@ -42,7 +42,22 @@
    * bs 指定了以字节为单位的块大小（block size）
    * count 表示需要被复制的块数
 
+8. 持续运行命令直至命令执行成功：
 
+   ```shell
+   repeat() {
+       while :;
+       do
+       	$@ && return;
+       	sleep 30;
+       done
+   }
+   # 例：
+   repeat wget -c http://www.example.com/software-0.1.tar.gz
+   # 该命令会每30秒就去下载http://www.example.com/software-0.1.tar.gz直至下载成功
+   ```
+
+   while 后的 `:` 这个符号是 shell 的內建命令，它总是返回0。
 
 
 
