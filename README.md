@@ -59,7 +59,18 @@
 
    while 后的 `:` 这个符号是 shell 的內建命令，它总是返回0。
 
+9. 将文件设置为不可修改状态：
 
+   ```shell
+   chattr +i test
+   rm test
+   rm: cannot remove 'test': Operation not permitted
+   
+   # 使文件恢复可写状态
+   chattr -i test
+   ```
+
+   
 
 
 
