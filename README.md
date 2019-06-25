@@ -70,9 +70,16 @@
    chattr -i test
    ```
 
+10. 批量生成不同名字的空白文件
+
+   ```shell
+   for name in {1..100}.txt
+   do
+       touch $name
+   done
+   ```
+
    
-
-
 
 
 
