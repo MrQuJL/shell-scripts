@@ -75,7 +75,7 @@
    ```shell
    for name in {1..100}.txt
    do
-     touch $name
+   touch $name
    done
    ```
 
