@@ -72,18 +72,34 @@
 
 10. 批量生成不同名字的空白文件
 
-	```shell
-	for name in {1..100}.txt
-	do
-	touch $name
-	done
-	```
+  ```shell
+  for name in {1..100}.txt
+  do
+  touch $name
+  done
+  ```
 
-  
+11. 使用 diff 命令查看两个文件的差异（类似`git diff`）
 
+    ```shell
+    # version1.txt
+    this is the original text
+    line2
+    line3
+    line4
+    happy hacking !
+    
+    # version2.txt
+    this is the original text
+    line2
+    line4
+    happy hacking !
+    GNU is not UNIX
+    
+    diff -u version1.txt version2.txt
+    ```
 
-
-
+    
 
 
 
