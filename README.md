@@ -72,12 +72,12 @@
 
 10. 批量生成不同名字的空白文件
 
-    ```shell
-    for name in {1..100}.txt
-    do
-    touch $name
-    done
-    ```
+   ```shell
+   for name in {1..100}.txt
+   do
+   touch $name
+   done
+   ```
 
 11. 使用 diff 命令查看两个文件的差异（类似`git diff`）
 
@@ -99,9 +99,13 @@
     diff -u version1.txt version2.txt
     ```
 
+12. 使用 `pidof` 命令获取某个进程的 PID
+
+    ```shell
+    pidof 进程名
+    ```
+
     
-
-
 
 
 
