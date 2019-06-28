@@ -72,12 +72,12 @@
 
 10. 批量生成不同名字的空白文件
 
-   ```shell
-   for name in {1..100}.txt
-   do
-   touch $name
-   done
-   ```
+  ```shell
+  for name in {1..100}.txt
+  do
+  touch $name
+  done
+  ```
 
 11. 使用 diff 命令查看两个文件的差异（类似`git diff`）
 
@@ -105,7 +105,21 @@
     pidof 进程名
     ```
 
+13. 使用 find 命令删除匹配到的文件：
+
+    ```shell
+    find . -type f -name "*.swp" -delete
+    ```
+
     
+
+
+
+
+
+
+
+
 
 
 
