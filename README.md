@@ -111,6 +111,15 @@
     find . -type f -name "*.swp" -delete
     ```
 
+14. 只列出目录
+
+    ```shell
+    find . -type d -maxdepth 1 -print
+    ls -l | grep "^d"
+    ls -F | grep "/$"
+    ls -d */
+    ```
+
     
 
 
