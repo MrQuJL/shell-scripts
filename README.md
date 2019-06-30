@@ -120,7 +120,20 @@
     ls -d */
     ```
 
-    
+15. 使用 grep 在多级目录中对文件中的内容进行搜索：
+
+    ```shell
+    grep "test" . -R -n
+    ```
+
+    ```
+    ./d5.txt:14:b193ec445727525003fe7a7f8e92054b  ./01_easy/test.sh
+    ./d5.txt:25:d41d8cd98f00b204e9800998ecf8427e  ./02_fun/test/1.py
+    ./d5.txt:26:d41d8cd98f00b204e9800998ecf8427e  ./02_fun/test/ru.sh
+    ./d5.txt:27:5be90d813d6c8856c467222c0a1e9f6c  ./02_fun/test.txt
+    ```
+
+    命令表示：查找文件内容中有 "test" 的文件，并打印行号。
 
 
 
