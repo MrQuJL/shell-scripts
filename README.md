@@ -149,7 +149,17 @@
 
     会打印出匹配 5 的行以及紧邻 5 之前的 3 行以及之后的 3 行
 
+18. 使用 sed 进行文本替换：
 
+    ```shell
+    # 将a.txt中所有的text替换成MrQuJL，不是真正的替换只打印到屏幕
+    sed 's/text/MrQuJL/g' a.txt
+    
+    # 将a.txt中所有的text替换成MrQuJL，真正替换
+    sed -i 's/text/MrQuJL/g' a.txt
+    ```
+
+    
 
 
 
