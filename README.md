@@ -159,9 +159,11 @@
     sed -i 's/text/MrQuJL/g' a.txt
     ```
 
-    
+19. 使用 awk 打印文件的每一行：
 
-
+    ```shell
+    echo -e "line1\nline2" | awk 'BEGIN{print "Start"} {print} END{print "End"}'
+    ```
 
 
 
