@@ -165,7 +165,35 @@
     echo -e "line1\nline2" | awk 'BEGIN{print "Start"} {print} END{print "End"}'
     ```
 
+20. 使用 grep 和 awk 实现词频统计：
 
+    ```shell
+    #!/bin/bash
+    # 文件名：word_freq.sh
+    # 用途：计算文件中的单词频率
+    
+    if [ $# -ne 1 ];
+      echo "Usage: $0 filename";
+      exit -1
+    fi
+    
+    filename=$1
+    egrep -o '\b[[:alpha:]]+\b' $filename | \
+      awk '{count[$0]++}
+      	END{ printf("%-14s%s\n", "Word", "Count") ;
+      	  for (ind in count) {printf("%-14s%d\n", ind, count[ind])}
+      	  }
+      '
+    
+    输出如下：
+    $ ./word_freq.sh words.txt
+    Word		Count
+    used		1
+    this		2
+    counting	3
+    ```
+
+    
 
 
 
