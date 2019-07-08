@@ -193,6 +193,12 @@
     counting	3
     ```
 
+21. 打印从第 M 行到第 N 行之间的文本：
+
+    ```shell
+    awk 'NR==M, NR==N' a.txt
+    ```
+
     
 
 
