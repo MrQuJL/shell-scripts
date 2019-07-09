@@ -199,6 +199,12 @@
     awk 'NR==M, NR==N' a.txt
     ```
 
+22. 将当前目录下的.java文件中的Copyright替换成Copyleft：
+
+    ```shell
+    find . -name "*.java" -print0 | xargs -0 -I {} sed -i 's/Copyright/Copyleft/g' {}
+    ```
+
     
 
 
