@@ -205,6 +205,14 @@
     find . -name "*.java" -print0 | xargs -0 -I {} sed -i 's/Copyright/Copyleft/g' {}
     ```
 
+23. 使用 curl 判断某个网站是否可以访问（是否宕机）
+
+    ```shelll
+    curl -I www.baidu.com
+    echo $?
+    # 打印0表示可以访问，其他表示已宕机
+    ```
+
     
 
 
