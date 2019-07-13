@@ -213,6 +213,12 @@
     # 打印0表示可以访问，其他表示已宕机
     ```
 
+24. 从 ifconfig 输出中提取 ip 地址：
+
+    ```shell
+    ifconfig eth0 | egrep -o "inet:[^ ]*" | grep -o "[0-9.]*"
+    ```
+
     
 
 
