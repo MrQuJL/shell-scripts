@@ -245,6 +245,12 @@
     du -h /usr/bin
     ```
 
+27. 找出指定目录中最大的10个文件：
+
+    ```shell
+    find . -type f -exec du -k {} \; | sort -nrk 1 | head
+    ```
+
     
 
 
