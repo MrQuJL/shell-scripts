@@ -251,6 +251,12 @@
     find . -type f -exec du -k {} \; | sort -nrk 1 | head
     ```
 
+28. 列出当前登录的用户列表：
+
+    ```shell
+    users | tr ' ' '\n' | sort | uniq
+    ```
+
     
 
 
