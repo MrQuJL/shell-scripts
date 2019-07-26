@@ -257,6 +257,12 @@
     users | tr ' ' '\n' | sort | uniq
     ```
 
+29. 使用 watch 监视命令的输出：
+
+    ```shell
+    watch -n 10 -d 'ls -l | grep "^d"'
+    ```
+
     
 
 
